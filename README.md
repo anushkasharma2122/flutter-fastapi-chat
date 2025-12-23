@@ -1,6 +1,3 @@
----
-
-```markdown
 # 💬 Flutter + FastAPI Real-Time Chat App
 
 A real-time chat application built using **Flutter** (frontend) and **FastAPI** (backend), powered by **WebSocket** communication.  
@@ -43,20 +40,16 @@ It showcases how:
 
 ## 📦 Folder Structure
 
-```
-
-├── lib/                  # Flutter frontend
-│   ├── chatScreen.dart   # Chat UI + WebSocket logic
-│   ├── username.dart     # Username input screen
-│   └── chat_model.dart   # Message model
-│
-├── server/               # FastAPI backend
-│   └── main.py           # WebSocket server
-│
-├── pubspec.yaml          # Flutter dependencies
-└── README.md
-
-````
+├── lib/  
+│   ├── chatScreen.dart  
+│   ├── username.dart  
+│   └── chat_model.dart  
+│  
+├── server/  
+│   └── main.py  
+│  
+├── pubspec.yaml  
+└── README.md  
 
 ---
 
@@ -64,75 +57,62 @@ It showcases how:
 
 ### 📡 Run Backend (FastAPI)
 
-```bash
-cd server
-pip install fastapi uvicorn
-uvicorn main:app --reload --host 0.0.0.0 --port 8080
-````
+cd server  
+pip install fastapi uvicorn  
+uvicorn main:app --reload --host 0.0.0.0 --port 8080  
 
 ---
 
 ### 📱 Run Frontend (Flutter)
 
-```bash
-flutter pub get
-flutter run
-```
+flutter pub get  
+flutter run  
 
-⚠️ Ensure the WebSocket URL in Flutter matches your system IP:
+Make sure the WebSocket URL in Flutter points to:
 
-```
 ws://<your-ip>:8080/ws
-```
 
 ---
 
 ## 💬 How It Works
 
-1. User enters a username and joins the chat.
-2. Flutter establishes a WebSocket connection with the FastAPI server.
-3. Messages are sent in the format:
-
-   ```
-   username: message
-   ```
-4. FastAPI receives the message and broadcasts it to all connected users.
+1. User enters a username and joins the chat.  
+2. Flutter establishes a WebSocket connection with the FastAPI server.  
+3. Messages are sent in the format:  
+   username: message  
+4. FastAPI receives and broadcasts the message to all connected users.  
 5. Flutter updates the chat UI in real time with timestamps.
 
 ---
 
 ## 🧱 Built Using
 
-* Flutter (Dart)
-* FastAPI (Python)
-* WebSocket Protocol
+- Flutter (Dart)  
+- FastAPI (Python)  
+- WebSocket Protocol  
 
 ---
 
 ## 🧪 Key Learnings
 
-* Implementing real-time communication using WebSockets
-* Managing socket connections in FastAPI
-* Building reactive UIs in Flutter
-* Structuring a full-stack application cleanly
-* Broadcasting data to multiple connected clients
+- Implementing real-time communication using WebSockets  
+- Managing socket connections in FastAPI  
+- Building reactive UIs in Flutter  
+- Structuring a clean full-stack project  
+- Broadcasting data to multiple clients  
 
 ---
 
 ## 🔮 Future Improvements
 
-* 💾 Persist messages using a database
-* 🔐 Add user authentication
-* 🧑‍🤝‍🧑 Support multiple chat rooms
-* 🌐 Enable Flutter Web support
-* 🐳 Dockerize backend for deployment
+- Persist messages using a database  
+- Add authentication  
+- Support multiple chat rooms  
+- Enable Flutter Web  
+- Dockerize backend  
 
 ---
 
 ## 👩‍💻 Author
 
-Developed by **Anushka Sharma** as a full-stack learning project using Flutter and FastAPI.
-
-```
-
-
+Developed by **Anushka Sharma** as a full-stack Flutter + FastAPI project.
