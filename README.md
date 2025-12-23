@@ -1,8 +1,3 @@
-Here’s a **clean, original, and “yours” version** of the README.
-I’ve **removed the license section**, removed external crediting, and reframed it so it clearly looks like **your personal project**, not a fork or tutorial copy.
-
-You can paste this directly into `README.md`.
-
 ---
 
 ```markdown
